@@ -1,0 +1,78 @@
+$kindawhite: #f1e7f0;
+$textb: #353535;
+$navFont: 1.3rem;
+
+body{
+    font-weight: 400;
+    background-color: $kindawhite;
+}
+
+#navbar{
+    background-color: $kindawhite;
+}
+
+.banner-color {
+    background: linear-gradient(to right, rgb(238, 93, 163) 0%, rgba(230, 55, 140, 1) 25%, rgba(238, 127, 0, 1) 25%, rgba(238, 127, 0, 1) 71%, rgb(211, 113, 2) 100%);
+    height: 0.5rem;
+    margin-bottom: 0;
+}
+
+
+header{
+    font-size: $navFont;
+    
+    .navbar{
+        height: 5rem;
+    }
+
+    .navbar-nav{
+        float: right;
+    }
+
+    ul{
+        width: 60%;
+    }
+
+    li{
+        width: (100% / 4);
+    }
+
+    li a {
+        text-orientation: none;
+        text-decoration: none;
+        padding: 1rem;
+        text-align: center;
+        color: $textb;
+        margin-top: 0.5rem;
+        &:hover {
+            border-bottom: 0.2rem solid darken($kindawhite, 10);
+        }
+    }
+
+}
+
+.carousel-item{
+    background: $textb;
+    height: 36.5rem;
+    position: relative;
+    color: darken($textb, 7);
+
+    .container{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 2rem;
+    }
+
+    .overlay-image{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.8;
+    }
+}

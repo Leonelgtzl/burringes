@@ -1,0 +1,65 @@
+body {
+  font-weight: 400;
+  background-color: #f1e7f0;
+}
+
+#navbar {
+  background-color: #f1e7f0;
+}
+
+.banner-color {
+  background: linear-gradient(to right, rgb(238, 93, 163) 0%, rgb(230, 55, 140) 25%, rgb(238, 127, 0) 25%, rgb(238, 127, 0) 71%, rgb(211, 113, 2) 100%);
+  height: 0.5rem;
+  margin-bottom: 0;
+}
+
+header {
+  font-size: 1.3rem;
+}
+header .navbar {
+  height: 5rem;
+}
+header .navbar-nav {
+  float: right;
+}
+header ul {
+  width: 60%;
+}
+header li {
+  width: 25%;
+}
+header li a {
+  text-orientation: none;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  color: #353535;
+  margin-top: 0.5rem;
+}
+header li a:hover {
+  border-bottom: 0.2rem solid #dec7dc;
+}
+
+.carousel-item {
+  background: #353535;
+  height: 36.5rem;
+  position: relative;
+  color: #232323;
+}
+.carousel-item .container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 2rem;
+}
+.carousel-item .overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}/*# sourceMappingURL=styles.css.map */

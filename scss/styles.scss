@@ -1,39 +1,41 @@
-$kindawhite: #f1e7f0;
-$textb: #353535;
-$navFont: 1.3rem;
+@import "mixins";
+@import "variables";
 
-body{
-    font-weight: 400;
-    background-color: $kindawhite;
+body { 
+    background-color: darken($kindawhite, 5);
 }
 
-#navbar{
+#navbar {
     background-color: $kindawhite;
+    font-weight: $fontW;
+    margin-bottom: 5rem;
 }
+
 
 .banner-color {
     background: linear-gradient(to right, rgb(238, 93, 163) 0%, rgba(230, 55, 140, 1) 25%, rgba(238, 127, 0, 1) 25%, rgba(238, 127, 0, 1) 71%, rgb(211, 113, 2) 100%);
     height: 0.5rem;
     margin-bottom: 0;
+
 }
 
 
-header{
+header {
     font-size: $navFont;
-    
-    .navbar{
+
+    .navbar {
         height: 5rem;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         float: right;
     }
 
-    ul{
+    ul {
         width: 60%;
     }
 
-    li{
+    li {
         width: (100% / 4);
     }
 
@@ -44,6 +46,7 @@ header{
         text-align: center;
         color: $textb;
         margin-top: 0.5rem;
+
         &:hover {
             border-bottom: 0.2rem solid darken($kindawhite, 10);
         }
@@ -51,13 +54,13 @@ header{
 
 }
 
-.carousel-item{
+.carousel-item {
     background: $textb;
     height: 36.5rem;
     position: relative;
-    color: darken($textb, 7);
+    color: lighten($kindawhite, 5);
 
-    .container{
+    .container {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -65,7 +68,7 @@ header{
         padding-bottom: 2rem;
     }
 
-    .overlay-image{
+    .overlay-image {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -75,4 +78,51 @@ header{
         background-size: cover;
         opacity: 0.8;
     }
+}
+
+#somos {
+    @include bannerContent;
+    @include imageLeft;
+}
+
+#mision {
+    @include bannerContent;
+    .banner-imagen {
+        margin: 0.5rem 0 0.5rem 0.5rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .banner-texto{
+        margin: 0.5rem 0.5rem 0.5rem 3rem;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+
+}
+
+#vision {
+    @include bannerContent;
+    @include imageLeft;
+}
+
+.titulo{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    padding-left: 1.5rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.subtitulo{
+    font-size: 1rem;
+    padding: 1.5rem;
+    text-align: justify;
+    font-weight: $fontW;
+    font-family: sans-serif;
+}
+
+footer{
+    background-color: lighten($kindawhite, 2);
+    padding: 2rem 0;
 }

@@ -36,7 +36,7 @@ header {
     }
 
     li {
-        width: (100% / 4);
+        width: calc(100% / 4);
     }
 
     li a {
@@ -80,34 +80,25 @@ header {
     }
 }
 
+.row{
+    border: 1rem solid darken($kindawhite, 10);
+}
+
 #somos {
     @include bannerContent;
-    @include imageLeft;
+
 }
 
 #mision {
     @include bannerContent;
-    .banner-imagen {
-        margin: 0.5rem 0 0.5rem 0.5rem;
-        border-top-right-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-    }
-
-    .banner-texto{
-        margin: 0.5rem 0.5rem 0.5rem 3rem;
-        border-top-left-radius: 2rem;
-        border-bottom-left-radius: 2rem;
-    }
-
 }
 
 #vision {
     @include bannerContent;
-    @include imageLeft;
 }
 
 .titulo{
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     font-size: 3rem;
     padding-left: 1.5rem;
     font-weight: 600;
@@ -115,7 +106,7 @@ header {
 }
 
 .subtitulo{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1.5rem;
     text-align: justify;
     font-weight: $fontW;
@@ -125,4 +116,17 @@ header {
 footer{
     background-color: lighten($kindawhite, 2);
     padding: 2rem 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .titulo{
+        font-size: calc(1rem + 1vw);
+        
+    }
+
+    .subtitulo{
+        font-size: calc(0.5rem + 1vw);
+    }
+    
 }

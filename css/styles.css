@@ -280,3 +280,7 @@ border-top-left-radius: 5px;
   border-left-color: rgb(44, 40, 36);
   color: rgb(238, 127, 0); 
 }
+ #map{
+  height: 500px;
+  width: 100%;
+ }
